@@ -4,7 +4,7 @@ Simple RSA Encryption and Decryption script with sample data
 ## Instructions
 Install package PGPy using "pip install PGPy"
 
-Download "Encrypted_File" and "Decrypt Script.py" on to same directory
+Download "Encrypted_File","Private Key.txt" and "Decrypt Script.py" on to same directory
 
 Execute file "Decrypt Script.py"
 
