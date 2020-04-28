@@ -233,10 +233,12 @@ msg = pgpy.PGPMessage.new(SOME_TEXT)
 encrypted_message = pub_key.encrypt(msg)
 
 pgpstr = str(encrypted_message)
-print("Encryption Complete")
+
 with open("Encrypted_File", "w") as text_file:
     text_file.write(pgpstr)
-    
+
+print("Encryption Complete")
+
 message_from_file = pgpy.PGPMessage.from_file("Encrypted_File")
 
 raw_message = priv_key.decrypt(message_from_file).message
