@@ -5,7 +5,7 @@ from pgpy.constants import PubKeyAlgorithm, KeyFlags, HashAlgorithm, SymmetricKe
 key = pgpy.PGPKey.new(PubKeyAlgorithm.RSAEncryptOrSign, 4096)
 
 # we now have some key material, but our new key doesn't have a user ID yet, and therefore is not yet usable!
-uid = pgpy.PGPUID.new('Syed Zain Zaidi', comment='PGP Assignment', email='zain.naqi@systemsltd.com')
+uid = pgpy.PGPUID.new('Syed Zain Zaidi', comment='PGP Assignment', email='zain.naqi@abc.com')
 
 # now we must add the new user id to the key. We'll need to specify all of our preferences at this point
 # because PGPy doesn't have any built-in key preference defaults at this time
